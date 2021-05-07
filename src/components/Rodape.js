@@ -1,7 +1,9 @@
-export default function Rodape(){
+export default function Rodape(props){
+    let classes = "pedir "+ props.situacao[0];
+
     return(
         <div class="rodape">
-            <div class="pedir">Selecione os 3 itens para fechar o pedido</div>
+            <div class={classes}>{props.situacao[1]}</div>
         </div>
 
     );

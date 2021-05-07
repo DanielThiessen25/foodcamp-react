@@ -31,7 +31,7 @@ export default function Faixas(props) {
 
             <div class="faixa">
                 {itensArray.map(item =>
-                    <Item nome={item.nome} imagem={item.imagem} descricao={item.descricao} preco={item.preco} />
+                    <Item nome={item.nome} imagem={item.imagem} descricao={item.descricao} tipo={props.tipo} preco={item.preco} adicionar={props.adicionar} remover={props.remover}/>
                 )}
 
             </div>
