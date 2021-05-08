@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.off{
+  display: none;
+}
+
 .fundo {
   width: 100%;
   height: 100%;
@@ -299,4 +303,19 @@
 .seletor {
   display: flex;
   flex-direction: row;
+}
+
+.quantidade {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mais {
+  font-weight: bolder;
+  color: #50D074;
+}
+
+.menos {
+  font-weight: bolder;
+  color: #cf2b2b;
 }
