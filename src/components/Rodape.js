@@ -6,10 +6,11 @@ import {
     Link
 } from "react-router-dom";
 
+import Revisar from "./Revisar";
 
 export default function Rodape(props) {
     let clicar = false;
-    let classe = ["pedir", "Selecione os 3 itens para fechar o pedido"];
+    let classe = ["pedir linkDesabilitado", "Selecione os 3 itens para fechar o pedido"];
     let verificador = [false, false, false];
     let pedido = props.pedido;
     for (let i = 0; i < pedido.length; i++) {
@@ -25,23 +26,21 @@ export default function Rodape(props) {
     }
     if (verificador[0] === true && verificador[1] === true && verificador[2] === true) {
         classe = ["pedir pronto", "Tudo certo, pode pedir!"];
-        alert("PRONTO");
         clicar = true;
     }
 
     function fechar(clicar) {
         if (clicar == true) {
-            alert("FECHOU PEDIDO");
         }
     }
 
     return (
         <Router>
             <div class="rodape">
-                <Link to="/revisar"><div class={classe[0]} onClick={() => fechar(clicar)}> {classe[1]} </div></Link>
+            <Link to="/revisar" className={classe[0]}><div onClick={() => fechar(clicar)}> {classe[1]} </div></Link>
                 <Switch>
                     <Route path="/revisar">
-                        <Revisar />
+                        <Revisar  pedido={pedido}/>
                     </Route>
                 </Switch>
             </div>

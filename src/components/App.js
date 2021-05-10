@@ -27,10 +27,8 @@ export default function App() {
      
     }
 
-        
-
     return (
-        <div class="fundo">
+        <div class="fundo" >
             <Topo />
             <Conteudo adicionar={adicionarItem} remover={removerItem} />
             <Rodape pedido={pedido} />
