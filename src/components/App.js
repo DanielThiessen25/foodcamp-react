@@ -5,12 +5,11 @@ import React from "react";
 
 
 export default function App() {
-    
+
     const [pedido, setPedido] = React.useState([]);
 
     function adicionarItem(item) {
         setPedido([...pedido, item]);
-        console.log(pedido);
     }
 
     function removerItem(item) {
@@ -23,8 +22,6 @@ export default function App() {
         }
         novoPedido.splice(retirar, 1);
         setPedido(novoPedido);
-        console.log(pedido);
-     
     }
 
     return (

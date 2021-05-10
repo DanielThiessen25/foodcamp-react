@@ -29,18 +29,13 @@ export default function Rodape(props) {
         clicar = true;
     }
 
-    function fechar(clicar) {
-        if (clicar == true) {
-        }
-    }
-
     return (
         <Router>
             <div class="rodape">
-            <Link to="/revisar" className={classe[0]}><div onClick={() => fechar(clicar)}> {classe[1]} </div></Link>
+                <Link to="/revisar" className={classe[0]}><div> {classe[1]} </div></Link>
                 <Switch>
                     <Route path="/revisar">
-                        <Revisar  pedido={pedido}/>
+                        <Revisar pedido={pedido} />
                     </Route>
                 </Switch>
             </div>
