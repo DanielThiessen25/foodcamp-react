@@ -35,9 +35,9 @@ Front-End of Instagram's web page.
 
 1. Clone this repository
 ```bash
-git clone https://github.com/DanielThiessen25/instagram-layout.git
+git clone https://github.com/DanielThiessen25/foodcamp-react.git
 
-cd instagram-layout
+cd foodcamp-react
 ```
 3. Install Dependencies
 ```bash
