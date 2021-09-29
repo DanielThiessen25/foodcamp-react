@@ -18,6 +18,32 @@ Layout of a food app that promises to deliver your food in only 6 minutes
 
 ## How to run
 
+# Instagram Layout
+Front-End of Instagram's web page.
+
+## Features
+
+- You can click on any clickable icon and text.
+- Developed layout with React Technology.
+
+## Technologies
+
+- HTML
+- React.js
+
+## How to run
+
 1. Clone this repository
-2. Open the HTML file in your favorite web browser
-3. Choose the mobile dev tool in your browser to the best experience :)
+```bash
+git clone https://github.com/DanielThiessen25/instagram-layout.git
+
+cd instagram-layout
+```
+3. Install Dependencies
+```bash
+npm i
+```
+5. Run the front-end with
+```bash
+npm run start
+```
